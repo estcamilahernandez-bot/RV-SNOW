@@ -2,20 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Muñeco con sombrero nuevo</title>
+    <title>Muñeco con montaña y árbol</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.7.0/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
-      <!-- Cielo -->
-      <a-sky color="#1e3c72"></a-sky>
+      <!-- Cielo y luces -->
+      <a-sky color="#87CEEB"></a-sky>
       <a-entity light="type: ambient; color: #888"></a-entity>
       <a-entity light="type: directional; color: #fff; intensity: 1" position="3 5 -2"></a-entity>
 
-      <!-- Piso -->
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="18" height="18" color="#a9d6e5"></a-plane>
+      <!-- Suelo -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#ffffff"></a-plane>
 
-      <!-- Cuerpo -->
+      <!-- Cuerpo del muñeco -->
       <a-sphere position="0 0.7 -3" radius="0.9" color="#fdfdfd"></a-sphere>
       <a-sphere position="0 1.8 -3" radius="0.6" color="#fdfdfd"></a-sphere>
       <a-sphere position="0 2.55 -3" radius="0.45" color="#fdfdfd"></a-sphere>
@@ -27,29 +27,33 @@
       <!-- Nariz -->
       <a-cone position="0 2.55 -2.55" radius-bottom="0.07" radius-top="0" height="0.35" color="orange" rotation="90 0 0"></a-cone>
 
-      <!-- Boca -->
-      <a-sphere position="-0.18 2.4 -2.65" radius="0.025" color="black"></a-sphere>
-      <a-sphere position="-0.1 2.35 -2.65" radius="0.025" color="black"></a-sphere>
-      <a-sphere position="0 2.33 -2.65" radius="0.025" color="black"></a-sphere>
-      <a-sphere position="0.1 2.35 -2.65" radius="0.025" color="black"></a-sphere>
-      <a-sphere position="0.18 2.4 -2.65" radius="0.025" color="black"></a-sphere>
+      <!-- Boca de carbón -->
+      <a-sphere position="-0.18 2.35 -2.65" radius="0.03" color="black"></a-sphere>
+      <a-sphere position="-0.1 2.28 -2.65" radius="0.03" color="black"></a-sphere>
+      <a-sphere position="0 2.25 -2.65" radius="0.03" color="black"></a-sphere>
+      <a-sphere position="0.1 2.28 -2.65" radius="0.03" color="black"></a-sphere>
+      <a-sphere position="0.18 2.35 -2.65" radius="0.03" color="black"></a-sphere>
 
       <!-- Botones -->
       <a-sphere position="0 1.7 -2.65" radius="0.06" color="#c1121f"></a-sphere>
       <a-sphere position="0 1.4 -2.65" radius="0.06" color="#c1121f"></a-sphere>
       <a-sphere position="0 1.1 -2.65" radius="0.06" color="#c1121f"></a-sphere>
 
-      <!-- Brazos de ramas -->
+      <!-- Brazos -->
       <a-cylinder position="-1.2 1.8 -3" radius="0.04" height="1.6" color="#4b2e16" rotation="0 0 60"></a-cylinder>
       <a-cylinder position="1.2 1.8 -3" radius="0.04" height="1.6" color="#4b2e16" rotation="0 0 -60"></a-cylinder>
 
       <!-- Sombrero de copa -->
-      <!-- Ala ancha -->
       <a-cylinder position="0 2.9 -3" radius="0.65" height="0.08" color="black"></a-cylinder>
-      <!-- Cuerpo del sombrero -->
       <a-cylinder position="0 3.25 -3" radius="0.35" height="0.6" color="black"></a-cylinder>
-      <!-- Banda roja -->
       <a-cylinder position="0 3.05 -3" radius="0.36" height="0.12" color="red"></a-cylinder>
+
+      <!-- Árbol pequeño a la derecha -->
+      <a-cone position="2 1 -4" radius-bottom="1" radius-top="0.1" height="2" color="green"></a-cone>
+      <a-box position="2 0 -4" width="0.3" height="0.5" depth="0.3" color="#8B4513"></a-box>
+
+      <!-- Montaña al fondo -->
+      <a-cone position="-2 0 -10" radius-bottom="6" radius-top="0.1" height="8" color="#808080"></a-cone>
     </a-scene>
   </body>
 </html>
