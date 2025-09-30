@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Muñeco con montaña y árbol</title>
+    <title>Muñeco con árbol y montaña</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.7.0/aframe.min.js"></script>
   </head>
   <body>
@@ -13,7 +13,7 @@
       <a-entity light="type: directional; color: #fff; intensity: 1" position="3 5 -2"></a-entity>
 
       <!-- Suelo -->
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#ffffff"></a-plane>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="30" height="30" color="#ffffff"></a-plane>
 
       <!-- Cuerpo del muñeco -->
       <a-sphere position="0 0.7 -3" radius="0.9" color="#fdfdfd"></a-sphere>
@@ -27,7 +27,7 @@
       <!-- Nariz -->
       <a-cone position="0 2.55 -2.55" radius-bottom="0.07" radius-top="0" height="0.35" color="orange" rotation="90 0 0"></a-cone>
 
-      <!-- Boca de carbón -->
+      <!-- Boca -->
       <a-sphere position="-0.18 2.35 -2.65" radius="0.03" color="black"></a-sphere>
       <a-sphere position="-0.1 2.28 -2.65" radius="0.03" color="black"></a-sphere>
       <a-sphere position="0 2.25 -2.65" radius="0.03" color="black"></a-sphere>
@@ -43,17 +43,18 @@
       <a-cylinder position="-1.2 1.8 -3" radius="0.04" height="1.6" color="#4b2e16" rotation="0 0 60"></a-cylinder>
       <a-cylinder position="1.2 1.8 -3" radius="0.04" height="1.6" color="#4b2e16" rotation="0 0 -60"></a-cylinder>
 
-      <!-- Sombrero de copa -->
+      <!-- Sombrero -->
       <a-cylinder position="0 2.9 -3" radius="0.65" height="0.08" color="black"></a-cylinder>
       <a-cylinder position="0 3.25 -3" radius="0.35" height="0.6" color="black"></a-cylinder>
       <a-cylinder position="0 3.05 -3" radius="0.36" height="0.12" color="red"></a-cylinder>
 
-      <!-- Árbol pequeño a la derecha -->
-      <a-cone position="2 1 -4" radius-bottom="1" radius-top="0.1" height="2" color="green"></a-cone>
-      <a-box position="2 0 -4" width="0.3" height="0.5" depth="0.3" color="#8B4513"></a-box>
+      <!-- Árbol pequeño a la izquierda -->
+      <a-cone position="-2 1.5 -4" radius-bottom="1.2" radius-top="0.1" height="3" color="green"></a-cone>
+      <!-- Tronco marrón más grande -->
+      <a-box position="-2 0 -4" width="0.5" height="1" depth="0.5" color="#8B4513"></a-box>
 
-      <!-- Montaña al fondo -->
-      <a-cone position="-2 0 -10" radius-bottom="6" radius-top="0.1" height="8" color="#808080"></a-cone>
+      <!-- Montaña grande y lejana -->
+      <a-cone position="0 0 -18" radius-bottom="12" radius-top="0.1" height="15" color="#ffffff"></a-cone>
     </a-scene>
   </body>
 </html>
